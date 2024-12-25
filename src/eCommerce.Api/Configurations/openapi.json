@@ -1,0 +1,12 @@
+{
+  "SwaggerSettings": {
+    "Enable": true,
+    "Title": "E-commerce Backend API",
+    "Version": "v1",
+    "Description": "The tech stack used in the project includes .NET Core API, Onion Architecture, MSSQL, Clean Architecture, Repository Pattern, MVC, C# 8.0, and a separate front-end repository in Angular.",
+    "ContactName": "Hossain MD Farhad",
+    "ContactEmail": "hssnmd.farhad@gmail.com",
+    "ContactUrl": "https://www.linkedin.com/in/hmfarhad/"
+  }
+
+}

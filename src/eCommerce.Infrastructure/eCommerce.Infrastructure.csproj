@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EntityService\**" />
+    <Compile Remove="demoService\**" />
+    <EmbeddedResource Remove="EntityService\**" />
+    <EmbeddedResource Remove="demoService\**" />
+    <None Remove="EntityService\**" />
+    <None Remove="demoService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="3.0.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="14.0.2" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\eCommerce.Application\eCommerce.Application.csproj" />
+  </ItemGroup>
+
+</Project>
