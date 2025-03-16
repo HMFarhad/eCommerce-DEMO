@@ -7,6 +7,8 @@ using eCommerce.Infrastructure.Auth;
 using eCommerce.Infrastructure.Common;
 using eCommerce.Infrastructure.Middleware;
 using eCommerce.Infrastructure.OpenApi;
+using Microsoft.EntityFrameworkCore;
+using eCommerce.Domain.Entity;
 
 namespace eCommerce.Infrastructure;
 
@@ -14,6 +16,10 @@ public static class Startup
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
     {
+        services.AddDbContext<ECommerceDBContext>(options =>
+                  options.UseSqlServer(config.GetSection("DatabaseSettings:ConnectionString").Value));
+
+
         return services
             .AddApiVersioning()
             .AddAuth()

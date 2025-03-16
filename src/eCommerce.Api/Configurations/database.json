@@ -1,0 +1,5 @@
+{
+  "DatabaseSettings": {
+    "ConnectionString": "Server=.;Database=ECommerce;Integrated Security=True;Encrypt=True;TrustServerCertificate=True"
+  }
+}

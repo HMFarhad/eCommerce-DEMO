@@ -13,6 +13,7 @@ internal static class Startup
             .AddJsonFile($"{configurationsDirectory}/encryption.json", optional: false, reloadOnChange: true)
             .AddJsonFile($"{configurationsDirectory}/openapi.json", optional: false, reloadOnChange: true)
             .AddJsonFile($"{configurationsDirectory}/cache.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"{configurationsDirectory}/database.json", optional: false, reloadOnChange: true)
             .AddEnvironmentVariables();
         return builder;
     }
